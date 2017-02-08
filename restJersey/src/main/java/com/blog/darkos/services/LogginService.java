@@ -13,7 +13,7 @@ public class LogginService {
 	@Path("/validation")
 	@POST
 	@Consumes({MediaType.APPLICATION_JSON})
-	@Produces({MediaType.APPLICATION_JSON,MediaType.APPLICATION_XML})
+	@Produces({MediaType.APPLICATION_XML,MediaType.APPLICATION_JSON})
 	public VOUser valid(VOUser user){
 		user.setValidUser(false);
 		if(user.getUserName().equals("test") && user.getPasswd().equals("passwd")){

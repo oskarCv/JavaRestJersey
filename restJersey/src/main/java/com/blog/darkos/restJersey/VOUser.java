@@ -1,5 +1,8 @@
 package com.blog.darkos.restJersey;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
 public class VOUser {
 	private String userName;
 	private String passwd;
